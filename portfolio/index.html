@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avuki Blessing Isaac — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <span class="nav-brand">ABI<span class="brand-dot">.</span></span>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+        <a href="cv/AVUKI BLESSING ISAAC RESUME (1).pdf" download class="btn btn-primary">Download CV</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#expertise" onclick="closeMobile()">Expertise</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">Available for work</div>
+      <p class="hero-name">Avuki Blessing Isaac</p>
+      <h1>Frontend<br/><em>Developer</em><br/>&amp; UI Craftsman.</h1>
+      <p class="hero-bio">I design and build web experiences that are fast, beautiful, and built for real people. Based in Uganda, working globally.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/256789638498?text=Hi%20Avuki%2C%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20discuss%20a%20project%20with%20you." target="_blank" class="btn btn-ghost">WhatsApp Me</a>
+      </div>
+      <div class="hero-meta">
+        <a href="mailto:avukiblessingisaac@gmail.com" class="meta-link">avukiblessingisaac@gmail.com</a>
+        <span class="meta-sep">·</span>
+        <a href="tel:+256789638498" class="meta-link">0789 638 498</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-frame">
+        <img src="assets/Remove background project - 19 June 2026 at 12.31.22.png" alt="Avuki Blessing Isaac" id="profilePhoto" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex'"/>
+        <div class="photo-fallback" id="photoFallback">
+          <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+            <rect width="120" height="140" fill="#1E2D45"/>
+            <circle cx="60" cy="50" r="24" fill="#2E4066"/>
+            <ellipse cx="60" cy="115" rx="38" ry="22" fill="#2E4066"/>
+          </svg>
+          <p>Place your photo at<br/><code>assets/profile.jpg</code></p>
+        </div>
+        <div class="photo-accent"></div>
+      </div>
+      <!-- <div class="hero-stats">
+        <div class="stat-box"> -->
+          <!-- <span class="stat-n">3+</span>
+          <span class="stat-l">Years of experience</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n">10+</span>
+          <span class="stat-l">Projects shipped</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-n">5+</span>
+          <span class="stat-l">Happy clients</span>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- ABOUT / BACKGROUND -->
+  <section class="section bg-blue" id="about">
+    <div class="container">
+      <div class="section-label">Background</div>
+      <div class="about-grid">
+        <div class="about-main">
+          <h2>A developer who takes <em>design seriously.</em></h2>
+          <p>I grew up with a curiosity for how things are built  and the web gave me a canvas where engineering and creativity meet. I started learning web development out of pure fascination, spending evenings and weekends teaching myself HTML, CSS, and JavaScript from scratch. That self-driven discipline shaped how I work today.</p>
+          <p>I studied and honed my craft through real projects, online courses, and building things that actually solved problems for people around me. That hands-on approach taught me more than any classroom could  how to debug under pressure, how to write code others can read, and how to turn a vague idea into something that works.</p>
+          <p>Today I build modern web applications using React and the broader JavaScript ecosystem. I care about every detail  from pixel-level design accuracy to performance optimisations that make apps feel instant.</p>
+        </div>
+        <div class="about-side">
+          <div class="about-card">
+            <span class="about-card-label">Location</span>
+            <span class="about-card-value">Kampala, Uganda</span>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Availability</span>
+            <span class="about-card-value">Open to freelance &amp; full-time</span>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Languages</span>
+            <span class="about-card-value">English (fluent)</span>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Focus</span>
+            <span class="about-card-value">Frontend, UI/UX, Web Apps</span>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Email</span>
+            <a href="mailto:avukiblessingisaac@gmail.com" class="about-card-value link">avukiblessingisaac@gmail.com</a>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Phone</span>
+            <a href="tel:+256789638498" class="about-card-value link">0789 638 498</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="section" id="expertise">
+    <div class="container">
+      <div class="section-label">Expertise</div>
+      <h2 class="section-title">What I do <em>best.</em></h2>
+
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 8h24M4 16h16M4 24h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>UI Development</h3>
+          <p>Translating designs into clean, semantic HTML &amp; CSS that looks exactly right on every device. I have a sharp eye for spacing, typography, and visual consistency.</p>
+          <ul class="expertise-skills">
+            <li>HTML5 &amp; CSS3</li><li>Responsive Design</li><li>CSS Animations</li><li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="8,12 4,16 8,20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="24,12 28,16 24,20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="18" y1="8" x2="14" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>JavaScript &amp; React</h3>
+          <p>Building interactive, data-driven web applications with modern JavaScript. I write components that are reusable, testable, and easy to extend.</p>
+          <ul class="expertise-skills">
+            <li>React.js</li><li>JavaScript (ES6+)</li><li>State Management</li><li>REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="6" width="26" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M3 11h26" stroke="currentColor" stroke-width="2"/>
+              <circle cx="7" cy="8.5" r="1" fill="currentColor"/>
+              <circle cx="11" cy="8.5" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Web App Architecture</h3>
+          <p>Structuring full frontend applications from routing to API integration. I ensure codebases are maintainable and scalable as products grow.</p>
+          <ul class="expertise-skills">
+            <li>React Router</li><li>Firebase</li><li>MongoDB</li><li>Node.js</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 4c0 0-6 5-6 12s6 12 6 12" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 16h24" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Performance &amp; SEO</h3>
+          <p>Optimising load times, Core Web Vitals, and search visibility. Fast websites retain users  I make sure yours doesn't lose people at the door.</p>
+          <ul class="expertise-skills">
+            <li>Lazy Loading</li><li>Code Splitting</li><li>Semantic HTML</li><li>Accessibility</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="10" height="10" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="18" y="4" width="10" height="10" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="4" y="18" width="10" height="10" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="18" y="18" width="10" height="10" rx="1" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Design-to-Code</h3>
+          <p>Working directly from Figma or design specs to produce pixel-perfect implementations. No guesswork — I read designs and bring them to life faithfully.</p>
+          <ul class="expertise-skills">
+            <li>Figma</li><li>Pixel Accuracy</li><li>Design Systems</li><li>Component Libraries</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 24l5-5 4 4 5-6 6 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="3" y="3" width="26" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Tools &amp; Workflow</h3>
+          <p>Professional development workflow using industry-standard tools. I collaborate well in teams and can onboard into an existing codebase quickly.</p>
+          <ul class="expertise-skills">
+            <li>Git &amp; GitHub</li><li>VS Code</li><li>Vercel / Netlify</li><li>Agile / Scrum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section bg-blue" id="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Things I've <em>built.</em></h2>
+
+      <div class="projects-list">
+
+        <div class="project-item reveal">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <div class="project-top">
+              <div>
+                <h3>Mayondo Wood &amp; Furniture</h3>
+                <div class="project-tags">
+                  <span>Inventory System</span><span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
+                </div>
+              </div>
+              <a href="#" class="project-link-btn">View →</a>
+            </div>
+            <p>A full inventory management system built for a furniture business. Tracks stock levels, records sales, manages supplier orders, and generates reports — replacing spreadsheets with a clean, purpose-built dashboard. Staff can log incoming stock, mark sales, and get low-stock alerts in real time.</p>
+            <div class="project-highlights">
+              <span>Stock tracking</span>
+              <span>Sales records</span>
+              <span>Low-stock alerts</span>
+              <span>Sales reports</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <div class="project-top">
+              <div>
+                <h3>Grocery Buddy</h3>
+                <div class="project-tags">
+                  <span>Web App</span><span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
+                </div>
+              </div>
+              <a href="#" class="project-link-btn">View →</a>
+            </div>
+            <p>A smart shopping companion that lets users build and manage their grocery lists online. Lists persist across sessions, items can be ticked off while shopping, and users can organise by category. Built as a Progressive Web App so it works offline and can be installed on any phone like a native app.</p>
+            <div class="project-highlights">
+              <span>Persistent lists</span>
+              <span>Category grouping</span>
+              <span>Offline support (PWA)</span>
+              <span>Mobile-first</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <div class="project-top">
+              <div>
+                <h3>Global E-Commerce Platform</h3>
+                <div class="project-tags">
+                  <span>Web &amp; Mobile</span><span>React js</span><span>React native</span><span>Python</span><span>PostgreSQL</span>
+                </div>
+              </div>
+              <a href="#" class="project-link-btn">View →</a>
+            </div>
+            <p>A multi-vendor marketplace connecting vendors and buyers globally. Vendors register, list products and services, manage their storefront, and process orders — all from a dedicated dashboard. Buyers browse, search, and purchase across categories. Built with separate vendor and buyer interfaces, a shared product catalogue, and a secure checkout flow.</p>
+            <div class="project-highlights">
+              <span>Vendor dashboard</span>
+              <span>Buyer storefront</span>
+              <span>Product listings</span>
+              <span>Global reach</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <h2>Let's build something <em>great together.</em></h2>
+          <p>Whether you have a project brief, a vague idea, or just want to explore possibilities — I'd love to hear from you. I'm currently open to freelance work and full-time frontend roles.</p>
+          <p>I'm based in Kampala but work with clients anywhere in the world. Response time is usually within a few hours.</p>
+          <div class="contact-btns">
+            <a href="https://wa.me/256789638498?text=Hi%20Avuki%2C%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20discuss%20a%20project%20with%20you." target="_blank" class="btn btn-primary">Open WhatsApp</a>
+            <a href="cv/Avuki_Blessing_Isaac_CV.pdf" download class="btn btn-ghost">Download CV</a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <a href="mailto:avukiblessingisaac@gmail.com" class="contact-tile">
+            <span class="contact-tile-label">Email</span>
+            <span class="contact-tile-value">avukiblessingisaac@gmail.com</span>
+            <span class="contact-tile-arrow">→</span>
+          </a>
+          <a href="tel:+256789638498" class="contact-tile">
+            <span class="contact-tile-label">Phone</span>
+            <span class="contact-tile-value">0789 638 498</span>
+            <span class="contact-tile-arrow">→</span>
+          </a>
+          <a href="https://wa.me/256789638498?text=Hi%20Avuki%2C%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20discuss%20a%20project%20with%20you." target="_blank" class="contact-tile contact-tile-green">
+            <span class="contact-tile-label">WhatsApp</span>
+            <span class="contact-tile-value">Message me directly</span>
+            <span class="contact-tile-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Avuki Blessing Isaac</span>
+      <span class="footer-copy">© 2025 — Frontend Developer, Uganda</span>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://wa.me/256789638498?text=Hi%20Avuki%2C%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20discuss%20a%20project%20with%20you." target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
